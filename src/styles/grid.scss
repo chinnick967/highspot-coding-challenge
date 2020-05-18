@@ -29,4 +29,7 @@
   bottom: 0px;
   left: 0px;
   padding-left: 300px;
+  @media #{$mobile} {
+    padding-left: 0px;
+  }
 }
