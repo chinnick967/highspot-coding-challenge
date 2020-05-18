@@ -1,0 +1,8 @@
+$mobile: "only screen and (max-width: 710px)";
+
+@mixin default-text {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+

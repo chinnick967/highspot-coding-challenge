@@ -1,0 +1,81 @@
+@import "./mixins.scss";
+
+#filterBar {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    padding: 20px 40px;
+    background: #242a2f;
+    top: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    transition: 250ms ease-in-out;
+    .logo {
+        width: 100%;
+    }
+    .mobileTab {
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: -57px;
+        transform: rotate(90deg);
+        color: #a59765;
+        background: #242a2f;
+        font-family: 'Roboto', sans-serif;
+        padding: 5px 20px;
+        opacity: .7;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .searchBox {
+        width: 100%;
+        height: 30px;
+        line-height: 35px;
+        margin: 20px 0;
+        transform: skew(-0.15rad);
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        transition: 250ms ease-in-out;
+        padding: 0 10px;
+        box-sizing: border-box;
+        &:focus {
+            border-color: #685a3b;;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(255,199,14,0.6);
+            outline: none;
+        }
+    }
+    .section {
+        @include default-text;
+        margin-bottom: 30px;
+        ul {
+            padding-left: 20px;
+            li {
+                list-style-type: none;
+                margin-bottom: 10px;
+                font-size: 18px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        input[type=checkbox] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    @media #{$mobile} {
+        left: -300px;
+        &.open {
+            left: 0px;
+        }
+        .mobileTab {
+            display: block;
+        }
+    }
+}

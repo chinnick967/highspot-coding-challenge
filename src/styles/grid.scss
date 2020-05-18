@@ -1,0 +1,32 @@
+@import './mixins.scss';
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-auto-columns: 300px;
+  grid-template-columns: repeat(auto-fill, 360px);
+  grid-gap: 25px;
+  justify-content: center;
+  padding-left: 310px;
+  //padding: 15px 50px 15px 350px;
+  margin-bottom: 0;
+  min-height: 100vh;
+
+  @media #{$mobile} {
+    padding-left: 10px;
+  }
+}
+
+.loading {
+  @include default-text;
+  font-size: 18px;
+  width: calc(100% - 300px);
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #5a6e9a;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding-left: 300px;
+}
