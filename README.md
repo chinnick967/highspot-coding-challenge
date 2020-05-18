@@ -3,11 +3,11 @@ A card-rendering UI for Highspot's coding challenge interview. This project uses
 
 ## Installation
 
-Install NPM (https://www.npmjs.com/get-npm)
-Clone the respository into a local directory
-Run `npm install` to install dependencies
-Run `npm run start` to initialize the app on port 8080
-Open http://localhost:8080/ in your browser
+Install NPM (https://www.npmjs.com/get-npm)  
+Clone the respository into a local directory  
+Run `npm install` to install dependencies  
+Run `npm run start` to initialize the app on port 8080  
+Open http://localhost:8080/ in your browser  
 
 ## Known Issues
 
