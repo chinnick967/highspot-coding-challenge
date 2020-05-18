@@ -43,7 +43,7 @@ class Filters extends Component {
     return (
       <div id={styles.filterBar} className={mobileToggle ? styles.open : ''}>
         <div className={styles.mobileTab} onClick={this.toggleMobileFilters}>Filters</div>
-        <img className={styles.logo} src="src/assets/logo.png" alt="Elder Scrolls Logo" />
+        <img className={styles.logo} src="dist/assets/logo.png" alt="Elder Scrolls Logo" />
         <input className={styles.searchBox} placeholder="Search by name" onChange={(e) => { e.persist(); this.updateNameSearch(e); }} />
         <div className={styles.section}>
           <h2>Type</h2>
